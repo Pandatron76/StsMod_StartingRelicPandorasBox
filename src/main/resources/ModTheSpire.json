@@ -1,0 +1,10 @@
+{
+  "modid": "StSMod_StartingRelicPandorasBox",
+  "name": "Starting Relic: Pandora's Box",
+  "author_list": ["Pandatron76"],
+  "description": "Replaces starting relic for Ironclad, The Silent and Defect with Pandora's Box.",
+  "version": "0.1.0",
+  "sts_version": "12-20-2018",
+  "mts_version": "3.6.0",
+  "dependencies": ["basemod"]
+}
