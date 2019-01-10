@@ -10,8 +10,9 @@ import java.util.ArrayList;
 public class getIroncladStartingRelicPatch {
 
     public static ArrayList<String> Postfix(ArrayList<String> __result, Ironclad __instance) {
-        // Clear out the original relics
-        __result.clear();
+        // Remove Burning Blood from the starting relics
+        __result.remove("Burning Blood");
+
         // Add the relic 'Pandora's Box' to the starting relics
         __result.add("Pandora's Box");
         // Remove the 'Pandora's Box' from the relic tracker

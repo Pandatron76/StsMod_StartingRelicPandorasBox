@@ -10,8 +10,8 @@ import java.util.ArrayList;
 public class getTheSilentStartingRelicPatch {
 
     public static ArrayList<String> Postfix(ArrayList<String> __result, TheSilent __instance) {
-        // Clear out the original relics
-        __result.clear();
+        // Remove Ring of the Snake from the starting relics
+        __result.remove("Ring of the Snake");
         // Add the relic 'Pandora's Box' to the starting relics
         __result.add("Pandora's Box");
         // Remove the 'Pandora's Box' from the relic tracker
@@ -19,7 +19,7 @@ public class getTheSilentStartingRelicPatch {
 
         // Remove the 'Ring of the Snake' from the relic tracker
         UnlockTracker.markRelicAsSeen("Ring of the Snake");
-        // Return the relics that Ironclad will start with
+        // Return the relics that TheSilent will start with
         return __result;
     }
 }
