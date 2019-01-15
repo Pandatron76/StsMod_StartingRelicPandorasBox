@@ -2,7 +2,7 @@
   "modid": "StSMod_StartingRelicPandorasBox",
   "name": "Starting Relic: Pandora's Box",
   "author_list": ["Pandatron76"],
-  "description": "Replaces starting relic for Ironclad, The Silent and Defect with Pandora's Box.\n  Also supports:\n    Yohane -> https://steamcommunity.com/sharedfiles/filedetails/?id=1612593526",
+  "description": "Replaces starting relic for Ironclad, The Silent, Defect and many more with Pandora's Box.\n  Also supports:\n    Yohane -> https://steamcommunity.com/sharedfiles/filedetails/?id=1612593526",
   "version": "1.1.0",
   "sts_version": "01-10-2019",
   "mts_version": "3.7.5",
