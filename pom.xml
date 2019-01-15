@@ -67,6 +67,13 @@
             <scope>system</scope>
             <systemPath>${project.basedir}/../../lib/Yohane.jar</systemPath>
         </dependency>
+        <dependency>
+            <groupId>com.evacipated.cardcrawl</groupId>
+            <artifactId>TheMystic</artifactId>
+            <version>0.15.6</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../../lib/TheMystic.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <build>

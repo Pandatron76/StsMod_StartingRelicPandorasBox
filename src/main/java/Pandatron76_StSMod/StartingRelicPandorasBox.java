@@ -18,8 +18,8 @@ public class StartingRelicPandorasBox implements
     public static final Logger logger = LogManager.getLogger(StartingRelicPandorasBox.class.getName());
     public static final String MODNAME = "Pandatron76_StSMod.StartingRelicPandorasBox";
     public static final String AUTHOR = "Pandatron76";
-    public static final String DESCRIPTION = "v1.1.0\n Replaces starting relic for " +
-            "Ironclad, The Silent, Defect and more with Pandora's Box.";
+    public static final String DESCRIPTION = "v1.2.0\n Replaces starting relic for...\n" +
+            "Ironclad, The Silent, Defect and many more characters's with Pandora's Box.";
 
     public static final float SUPPORTED_MODS_LABEL_X = 350.0f;
     public static final float SUPPORTED_MODS_LABEL_Y = 750.0f;
@@ -51,8 +51,14 @@ public class StartingRelicPandorasBox implements
                 SUPPORTED_MODS_LABEL_Y - 50.0f,
                 settingsPanel, me -> {});
 
+        ModLabel THEMYSTIC_MOD_LABEL = new ModLabel("TheMystic -> https://steamcommunity.com/sharedfiles/filedetails/?id=1609848111",
+                SUPPORTED_MODS_LABEL_X,
+                SUPPORTED_MODS_LABEL_Y - 100.0f,
+                settingsPanel, me -> {});
+
         settingsPanel.addUIElement(SUPPORTED_MODS_LABEL);
         settingsPanel.addUIElement(YOHANE_MOD_LABEL);
+        settingsPanel.addUIElement(THEMYSTIC_MOD_LABEL);
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION , settingsPanel);
 
         Settings.isDailyRun = false;
