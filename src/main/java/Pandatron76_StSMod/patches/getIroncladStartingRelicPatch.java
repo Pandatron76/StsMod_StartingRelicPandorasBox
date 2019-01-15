@@ -15,11 +15,12 @@ public class getIroncladStartingRelicPatch {
 
         // Add the relic 'Pandora's Box' to the starting relics
         __result.add("Pandora's Box");
+
         // Remove the 'Pandora's Box' from the relic tracker
         UnlockTracker.markRelicAsSeen("Pandora's Box");
-
         // Remove the 'Burning Blood' from the relic tracker
         UnlockTracker.markRelicAsSeen("Burning Blood");
+
         // Return the relics that Ironclad will start with
         return __result;
     }

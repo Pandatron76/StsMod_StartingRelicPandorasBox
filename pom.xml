@@ -19,6 +19,9 @@
         <desktopJarPath>${modWorkingPath}/desktop-1.0.jar</desktopJarPath>
         <modSpireJarPath>${modWorkingPath}/ModTheSpire.jar</modSpireJarPath>
         <baseModJarPath>${modJarsPath}/BaseMod.jar</baseModJarPath>
+        <StSLibJarPath>${modJarsPath}/StSLib.jar</StSLibJarPath>
+        <FriendlyMinionsPath>${modJarsPath}/FriendlyMinions.jar</FriendlyMinionsPath>
+        <YohaneJarPath>${modJarsPath}/Yohane.jar</YohaneJarPath>
     </properties>
 
     <dependencies>
@@ -32,16 +35,37 @@
         <dependency>
             <groupId>com.evacipated.cardcrawl</groupId>
             <artifactId>ModTheSpire</artifactId>
-            <version>3.5.0</version>
+            <version>3.7.5</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/../../lib/ModTheSpire.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.evacipated.cardcrawl</groupId>
             <artifactId>BaseMod</artifactId>
-            <version>5.1.0</version>
+            <version>5.8.0</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/../../lib/BaseMod.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.evacipated.cardcrawl</groupId>
+            <artifactId>StSLib</artifactId>
+            <version>1.11.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../../lib/StSLib.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.evacipated.cardcrawl</groupId>
+            <artifactId>FriendlyMinions</artifactId>
+            <version>0.1.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../../lib/FriendlyMinions.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.evacipated.cardcrawl</groupId>
+            <artifactId>Yohane</artifactId>
+            <version>1.4.3</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../../lib/Yohane.jar</systemPath>
         </dependency>
     </dependencies>
 

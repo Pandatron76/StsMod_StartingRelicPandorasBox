@@ -4,7 +4,6 @@ import basemod.BaseMod;
 import basemod.ModLabel;
 import basemod.ModPanel;
 import basemod.interfaces.PostInitializeSubscriber;
-
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 
@@ -19,11 +18,11 @@ public class StartingRelicPandorasBox implements
     public static final Logger logger = LogManager.getLogger(StartingRelicPandorasBox.class.getName());
     public static final String MODNAME = "Pandatron76_StSMod.StartingRelicPandorasBox";
     public static final String AUTHOR = "Pandatron76";
-    public static final String DESCRIPTION = "v1.0.0\n Replaces starting relic for " +
-            "Ironclad, The Silent and Defect with Pandora's Box.";
+    public static final String DESCRIPTION = "v1.1.0\n Replaces starting relic for " +
+            "Ironclad, The Silent, Defect and more with Pandora's Box.";
 
-    public static final float TBD_LABEL_X = 350.0f;
-    public static final float TBD_LABEL_Y = 750.0f;
+    public static final float SUPPORTED_MODS_LABEL_X = 350.0f;
+    public static final float SUPPORTED_MODS_LABEL_Y = 750.0f;
 
     public static final String ASSETS_FOLDER = "img";
     public static final String BADGE_IMG = "/badges/StartingRelicPandorasBoxBadge.png";
@@ -31,8 +30,6 @@ public class StartingRelicPandorasBox implements
     public StartingRelicPandorasBox() {
         BaseMod.subscribe(this);
         logger.info("Subscribing to PostInitializeSubscriber event");
-        logger.info("Subscribing to EditStringsSubscriber event");
-        logger.info("Subscribing to EditRelicsSubscriber event");
     }
 
     public static void initialize(){
@@ -44,12 +41,18 @@ public class StartingRelicPandorasBox implements
 
         Texture badgeTexture = new Texture(makePath(BADGE_IMG));
         ModPanel settingsPanel = new ModPanel();
-        ModLabel TBD_Label = new ModLabel("Nothing here at this time. Enjoy the mod :)",
-                TBD_LABEL_X,
-                TBD_LABEL_Y,
+        ModLabel SUPPORTED_MODS_LABEL = new ModLabel("This mod can also be integrated with:",
+                SUPPORTED_MODS_LABEL_X,
+                SUPPORTED_MODS_LABEL_Y,
                 settingsPanel, me -> {});
 
-        settingsPanel.addUIElement(TBD_Label);
+        ModLabel YOHANE_MOD_LABEL = new ModLabel("Yohane -> https://steamcommunity.com/sharedfiles/filedetails/?id=1612593526",
+                SUPPORTED_MODS_LABEL_X,
+                SUPPORTED_MODS_LABEL_Y - 50.0f,
+                settingsPanel, me -> {});
+
+        settingsPanel.addUIElement(SUPPORTED_MODS_LABEL);
+        settingsPanel.addUIElement(YOHANE_MOD_LABEL);
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION , settingsPanel);
 
         Settings.isDailyRun = false;
